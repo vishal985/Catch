@@ -1,0 +1,555 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  
+<style>
+      html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #000;
+      }
+.normal-img img{
+        width:100%;
+		    height:200px;
+      }
+      #desc-container {
+        max-width: 500px;
+        max-height: 500px;
+        min-width: 200px;
+        min-height: 250px;
+        background: #001545;
+        color: #fff;
+        border-radius: 3px;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+		}
+  
+   #desc-container2 {
+        max-width: 500px;
+        max-height: 500px;
+        min-width: 200px;
+        min-height: 250px;
+        background: #001545;
+        color: #fff;
+        border-radius: 3px;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+		}
+  
+  #desc-container3 {
+        max-width: 500px;
+        max-height: 500px;
+        min-width: 200px;
+        min-height: 250px;
+        background: #001545;
+        color: #fff;
+        border-radius: 3px;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+		}
+  
+  #desc-container4 {
+        max-width: 500px;
+        max-height: 500px;
+        min-width: 200px;
+        min-height: 250px;
+        background: #001545;
+        color: #fff;
+        border-radius: 3px;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+		}
+  
+  #desc-container5 {
+        max-width: 500px;
+        max-height: 500px;
+        min-width: 200px;
+        min-height: 250px;
+        background: #001545;
+        color: #fff;
+        border-radius: 3px;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+		}
+  
+  #desc-container6 {
+        max-width: 500px;
+        max-height: 500px;
+        min-width: 200px;
+        min-height: 250px;
+        background: #001545;
+        color: #fff;
+        border-radius: 3px;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+		}
+
+      #desc-container > iframe {
+        border: none;
+        width:100%;
+      }
+
+      .title {
+	    color: #eabb6a;
+        font-size: 1.6em;
+        padding: 10px 0px 10px 20px;
+		font-family: 'Hepta Slab', serif;
+      }
+
+      .text {
+        padding: 0 20px 20px 20px;
+		    font-family: 'Quicksand', sans-serif;
+        font-size: 1em;
+      }
+  
+  #testAudio{
+  width:0px;
+  height:0px;
+}  
+.audiobox{
+  position: absolute;
+  bottom: 0px;
+  padding: .5em;
+}
+#playAudio{
+  background: transparent;
+  outline: none;
+  border: none;
+  color:#fff;
+  text-transform:uppercase;
+  font-weight:900;
+  cursor:pointer;
+}
+  
+  
+  </style>
+</head>
+ <body>
+   
+   
+   
+  <nav>
+      
+      <li style="float: left; position: absolute;"><img style="width:130px" src="https://raw.githubusercontent.com/piyushsinghwork/Hello-World/master/catch.png"></li>
+      <li class="item selected">Home</li>
+      <li class="item">About</li>
+      <li class="item">Products</li>
+      <li class="item">Games</li>
+      <li class="item">Mixology</li>
+      <li class="item">Events</li>
+      <li class="item">Stockists</li>
+      <li class="item">Hospitality</li>
+      <li class="item">Careers</li>
+      <li class="item">Contact</li>
+
+    </nav>
+
+    <div class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+   
+<div id="container"></div>
+
+ 
+   
+   <div class="audiobox">
+      <audio id="testAudio" controls="controls" autoplay="autoplay" loop="loop">
+        <source src="https://cdn.glitch.com/50bc88ad-1f24-428a-bbd0-9834ae22d197%2Fsound.mp3" type="audio/mpeg">
+      </audio>
+      <button id="playAudio">Pause</button>
+    </div>
+
+<div id="desc-container" style="display:none" class="normal-img">
+      <img src="https://piyushsinghwork.github.io/Hello-World/p0-@1.jpg">
+      <div class="title">WELCOME TO CATCH</div>
+      <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>  	  
+ </div>
+   
+ <div id="desc-container2" style="display:none" class="normal-img">
+      <img src="https://piyushsinghwork.github.io/Hello-World/p2-@1.jpg">
+      <div class="title">DISCOVER THE LOBBY</div>
+      <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>    
+ </div>
+   
+ <div id="desc-container3" style="display:none" class="normal-img">
+      <img src="https://piyushsinghwork.github.io/Hello-World/p40-@1.jpg">
+      <div class="title">DISCOVER THE BAR</div>
+      <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>    
+ </div>
+   
+<div id="desc-container4" style="display:none" class="normal-img">
+      <img src="https://piyushsinghwork.github.io/Hello-World/p7-@1.jpg">
+      <div class="title">DISCOVER THE PARLOUR</div>
+      <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>    
+ </div>
+   
+ <div id="desc-container5" style="display:none" class="normal-img">
+      <img src="https://piyushsinghwork.github.io/Hello-World/p26-@1.jpg">
+      <div class="title">DISCOVER THE VINEYARD</div>
+      <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>    
+ </div>
+   
+  <div id="desc-container6" style="display:none" class="normal-img">
+      <img src="https://piyushsinghwork.github.io/Hello-World/p2-@1.jpg">
+      <div class="title">DISCOVER THE </div>
+      <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>    
+ </div>
+  
+   <!-- cursor -->
+     <div class="cursor cursor--dot"></div>
+    <div class="cursor cursor--border"></div>
+   <!-- cursor -->
+   
+   
+   <!-- new box by praveen -->
+   <div id="mydiv">
+        <div class="bookholder">
+          
+        <div id="newbook">
+          <div id="book-contant">
+            <h1>01</h1>
+            <h2>Hello World</h2>
+            <p>
+              Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century .
+            </p>
+        </div>
+          <img src="https://cdn.glitch.com/6130ffe9-f7f2-4222-9f21-9ec64bfec53e%2F1.jpg?v=1566905902234" id="book-img">
+          <div id="book-next" onclick="booknext()">
+            <span class="fa fa-hand-o-right" aria-hidden="true"></span>
+          </div>
+          <div id="book-pre" onclick="bookpre()">
+            <span class="fa fa-hand-o-left" aria-hidden="true"></span>
+          </div>
+      </div>
+          
+          <div class="bookclose" onclick="bookclose()">
+            <img src="https://piyushsinghwork.github.io/Hello-World/close_1.svg">
+          </div>
+          
+    </div>
+      </div>
+   
+ <div id="beverages" onclick="mytry()"> 
+    Catch Beverages
+  </div>
+<!-- new box by praveen -->
+   
+ <script type="text/javascript" src="https://pchen66.github.io/js/three/three.min.js"></script>
+ <script type="text/javascript" src="panolens.min.js"></script>
+ <script type="text/javascript" src="script.js"></script>
+ 
+<script type="text/javascript">
+  
+  // cursor
+  
+    let clientX = -100;
+let clientY = -100;
+const cursorDot = document.querySelector(".cursor--dot");
+const cursorBorder = document.querySelector(".cursor--border");
+
+const initCursor = () => {
+  document.addEventListener("mousemove", e => {
+    clientX = e.clientX;
+    clientY = e.clientY;
+    if(e.target.nodeName == 'A'){
+      console.log('yes');
+      cursorBorder.style.opacity = '0';
+    }else{
+      cursorBorder.style.opacity = '1';    
+    }
+  });
+  
+  const render = () => {
+    cursorDot.style.transform = `translate(${clientX}px, ${clientY}px)`;
+    TweenMax.set(cursorBorder, {
+      x: clientX - 25,
+      y: clientY - 25
+    });
+    
+    requestAnimationFrame(render);
+  };
+  requestAnimationFrame(render);
+};
+
+initCursor();
+  
+  // cursor
+  
+  
+  // praveen div
+      function mytry() {
+  var x = document.getElementById("mydiv");
+  if (x.style.display !== "block") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+      
+      function bookclose(){
+        var x = document.getElementById("mydiv");
+        x.style.display = "none";
+      }
+
+      
+      // mybook slider
+           var book1 = [
+   {
+  num:'01',
+  heading:"Catch Mango!",
+  pera:"Mangoes are juicy stone fruit from numerous species of tropical trees belonging to the flowering plant genus Mangifera, cultivated mostly for their edible fruit. The majority of these species are found in nature as wild mangoes",
+  images:"https://cdn.glitch.com/6130ffe9-f7f2-4222-9f21-9ec64bfec53e%2F1.jpg?v=1566905902234"
+},
+  {
+  num:'02',
+  heading:"Catch Sweet Lime!",
+  pera:"Citrus limetta, alternatively considered to be a cultivar of Citrus limon, C. limon 'Limetta', is a species of citrus, commonly known as mousambi, musambi, sweet lime, sweet lemon, and sweet limetta, it is a member of the sweet lemons",
+  images:"https://cdn.glitch.com/6130ffe9-f7f2-4222-9f21-9ec64bfec53e%2F3.jpg?v=1566905888073"
+},
+ {
+  num:'03',
+  heading:"Catch strawberry!",
+  pera:"The garden strawberry is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit.",
+  images:"https://cdn.glitch.com/6130ffe9-f7f2-4222-9f21-9ec64bfec53e%2F2.jpg?v=1566906382711"
+},
+  {
+  num:'04',
+  heading:"Catch Fresh Lime!",
+  pera:"There are several species of citrus trees whose fruits are called limes, including the Key lime (Citrus aurantifolia), Persian lime, kaffir lime, and desert lime. Limes are a rich source of vitamin C, are sour, and are often used to accent the flavours of foods and beverages.",
+  images:"https://cdn.glitch.com/6130ffe9-f7f2-4222-9f21-9ec64bfec53e%2F4.jpg?v=1566905879090"
+}
+]
+
+var x = 0;
+var main = document.getElementById("book-contant");
+
+function booknext(){
+  x++;
+  if(x == book1.length){
+  x = 0;
+  }
+  changebook();
+}
+
+function bookpre(){
+  
+  if(x == 0){
+  x = 3;
+  }
+  x--;
+  changebook();
+}
+
+function changebook(){
+  main.firstElementChild.innerText = book1[x].num;
+  main.children[1].innerText = book1[x].heading;
+  main.children[2].innerText = book1[x].pera;
+  document.getElementById("book-img").src = book1[x].images;
+}
+  
+  
+  //audio testing
+      document.getElementById("playAudio").addEventListener("click", function(){
+	    var audio = document.getElementById('testAudio');
+        if(this.innerHTML == "Pause"){
+          this.innerHTML = "Play"
+          audio.pause();
+          } 
+        else{
+          this.innerHTML = "Pause";
+          audio.play();
+        }
+      });
+
+var panorama, panorama2, panorama3, panorama4, panorama5, panorama6, panorama7, panorama8, panorama9, panorama10, panorama11, panorama12, panorama_video, panorama_vide2, panorama_vide3, viewer, container, infospot, infospot2, infospot3, infospot4, infospot5, infospot6, infospot7, infospot8, infospot9, infospot10;
+
+container = document.querySelector( '#container' );
+
+panorama = new PANOLENS.ImagePanorama( 'https://piyushsinghwork.github.io/Hello-World/p0-@1a.jpg' );
+
+panorama2 = new PANOLENS.ImagePanorama( 'https://piyushsinghwork.github.io/Hello-World/front.jpg' );
+
+panorama3 = new PANOLENS.ImagePanorama( 'https://piyushsinghwork.github.io/Hello-World/p3.jpg' );
+
+panorama4 = new PANOLENS.ImagePanorama( 'https://piyushsinghwork.github.io/Hello-World/p5(a).jpg' );
+
+panorama5 = new PANOLENS.ImagePanorama( 'https://piyushsinghwork.github.io/Hello-World/pagain.jpg' );
+
+panorama6 = new PANOLENS.ImagePanorama( 'https://piyushsinghwork.github.io/Hello-World/bar.jpg' );
+
+panorama7 = new PANOLENS.ImagePanorama( 'https://piyushsinghwork.github.io/Hello-World/p26-@1.jpg' );
+
+panorama8 = new PANOLENS.ImagePanorama( 'https://piyushsinghwork.github.io/Hello-World/46.jpg' );
+
+panorama9 = new PANOLENS.ImagePanorama( 'https://piyushsinghwork.github.io/Hello-World/48.jpg' );
+
+panorama10 = new PANOLENS.ImagePanorama( 'https://piyushsinghwork.github.io/Hello-World/47.jpg' );
+
+panorama11 = new PANOLENS.ImagePanorama( 'https://raw.githubusercontent.com/piyushsinghwork/Hello-World/master/game.jpg' );
+
+panorama12 = new PANOLENS.ImagePanorama( 'https://piyushsinghwork.github.io/Hello-World/p6.jpg' );
+
+panorama_video = new PANOLENS.VideoPanorama( 'https://pchen66.github.io/Panolens/examples/asset/textures/video/1941-battle-low.mp4' );
+
+panorama_video2 = new PANOLENS.VideoPanorama( 'https://pchen66.github.io/Panolens/examples/asset/textures/video/1941-battle-low.mp4' );
+
+panorama_video3 = new PANOLENS.VideoPanorama( 'https://pchen66.github.io/Panolens/examples/asset/textures/video/1941-battle-low.mp4' );
+
+panorama.link( panorama2, new THREE.Vector3(5000, 350, -270.46), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png' );
+panorama2.link( panorama3, new THREE.Vector3(4000.48, -100.67, -370), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/up.png'  );
+panorama2.link( panorama, new THREE.Vector3(-3000.48, -400.67, 5000), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/right.png'  );
+
+panorama3.link( panorama4, new THREE.Vector3(1000, 500, 4000), 300, 'https://cdn.glitch.com/6130ffe9-f7f2-4222-9f21-9ec64bfec53e%2Fright.png'  );
+panorama3.link( panorama12, new THREE.Vector3(3000, 0, 2500), 300, 'https://cdn.glitch.com/6130ffe9-f7f2-4222-9f21-9ec64bfec53e%2Fbottom.png?v=1566808075852'  );
+panorama3.link( panorama11, new THREE.Vector3(4000, 600, 0), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/left.png'  );
+panorama3.link( panorama2, new THREE.Vector3(-3000, -0, -2500), 300, 'https://cdn.glitch.com/6130ffe9-f7f2-4222-9f21-9ec64bfec53e%2Ftop.png?v=1566808114098'  );
+
+panorama4.link( panorama7, new THREE.Vector3(4500.48, -300.67, 3000), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down%20(1).png'  );
+panorama4.link( panorama3, new THREE.Vector3(-4500.48, -100.67, -675.46), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/left%20(1).png'  );
+panorama4.link( panorama11, new THREE.Vector3(-4500.48, -300.67, -2500), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down%20(1).png'  );
+
+panorama5.link( panorama8, new THREE.Vector3(-4000, -200.67, 600), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+panorama5.link( panorama6, new THREE.Vector3(4000, 600.67, -2275.46), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+panorama5.link( panorama6, new THREE.Vector3(4000, 600.67, 1175.46), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+panorama5.link( panorama9, new THREE.Vector3(500, -500, 4500), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+panorama5.link( panorama3, new THREE.Vector3(-500, -300, -4500), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+
+panorama9.link( panorama10, new THREE.Vector3(2000, 100, -3000), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+panorama9.link( panorama5, new THREE.Vector3(-4500.48, -100.67, -475.46), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+
+panorama10.link( panorama9, new THREE.Vector3(5000, 300, -700), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+
+panorama8.link( panorama5, new THREE.Vector3(1500, -800, 4500), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+
+panorama6.link( panorama11, new THREE.Vector3(-4500.48, 300.67, -275.46), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+panorama6.link( panorama5, new THREE.Vector3(-2000, 800, 6000), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+
+panorama11.link( panorama4, new THREE.Vector3(-4500.48, -300.67, 100), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+panorama11.link( panorama6, new THREE.Vector3(1500, 500, 2000), 200, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+
+panorama12.link( panorama4, new THREE.Vector3(-1000, -400, 4500), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+panorama12.link( panorama5, new THREE.Vector3( 4000, 500, 1175 ), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+panorama12.link( panorama11, new THREE.Vector3(1000, -400, -4500), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+panorama12.link( panorama3, new THREE.Vector3(-4000, -500, -1175), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+  
+panorama7.link( panorama4, new THREE.Vector3(-3700.48, -300, -4075.46), 300, 'https://raw.githubusercontent.com/vishal985/Hello-World/master/down.png'  );
+
+<!-- infospot = new PANOLENS.Infospot( 350, PANOLENS.DataImage.Info ); -->
+<!-- infospot.position.set( 0, -2000, -5000 ); -->
+
+panorama.add( infospot ); 
+
+viewer = new PANOLENS.Viewer( { container: container, output: 'console', autoRotate: true, autoRotateSpeed: .3, autoRotateActivationDuration: 3000 } );
+viewer.add( panorama, panorama2, panorama3, panorama4, panorama5, panorama6, panorama7,  panorama8, panorama9, panorama10, panorama11,  panorama12, panorama_video, panorama_video2, panorama_video3 );
+
+// Cube custom item
+var cube = new THREE.Mesh(new THREE.BoxGeometry(100, 100, 100), new THREE.MeshNormalMaterial());
+cube.position.set(-300, 100, 100);
+viewer.addUpdateCallback(function(){
+  cube.rotation.y += 0.05;
+  cube.rotation.x += 0.02;
+});
+<!-- panorama.add( cube ); -->
+
+var controlItemCube = {
+  style: {
+    backgroundImage: 'url()'
+  },
+  
+  onTap: function(){
+    viewer.tweenControlCenterByObject( cube );
+  }
+};
+viewer.appendControlItem(controlItemCube);
+
+// Wonder women custom item
+<!-- var posterInfospot = new PANOLENS.Infospot(2000, 'https://images-na.ssl-images-amazon.com/images/I/91nELBuo3kL._RI_SX200_.jpg'); -->
+<!-- posterInfospot.position.set(-4774.9, 474.16, -1375.02); -->
+<!-- panorama.add(posterInfospot); -->
+
+var controlItemPoster = {
+  style: {
+    backgroundImage: 'url()',
+    float: 'left'
+  },
+  
+  onTap: function(){
+    posterInfospot.focus();
+  }
+};
+viewer.appendControlItem(controlItemPoster);
+
+// Video control item
+var controlItemVideoGroup = {
+  style: {
+    backgroundImage: 'url()',
+    float: 'left'
+  },
+  
+  onTap: function(){
+    viewer.setPanorama(panorama);
+  },
+  
+  group: 'video'
+}; 
+viewer.appendControlItem(controlItemVideoGroup);
+
+      infospot = new PANOLENS.Infospot( 400, PANOLENS.DataImage.Info );
+      infospot.position.set( 0, -2000, -5000 );
+      infospot.addHoverElement( document.getElementById( 'desc-container' ), 200 );
+      panorama.add( infospot );
+  
+      infospot2 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
+      infospot2.position.set( 3000, -1000, 2500 );
+      infospot2.addHoverElement( document.getElementById( 'desc-container2' ), 200 );
+      panorama3.add( infospot2 );
+  
+      infospot3 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
+      infospot3.position.set( 4000, -100.67, -2275.46 );
+      infospot3.addHoverElement( document.getElementById( 'desc-container3' ), 200 );
+      panorama5.add( infospot3 );
+  
+      infospot4 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
+      infospot4.position.set( 4000, -200.67, 1175.46 );
+      infospot4.addHoverElement( document.getElementById( 'desc-container4' ), 200 );
+      panorama12.add( infospot4 );
+  
+      infospot5 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
+      infospot5.position.set( 4500.48, -1000.67, 3100 );
+      infospot5.addHoverElement( document.getElementById( 'desc-container5' ), 200 );
+      panorama4.add( infospot5 );
+  
+      infospot6 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
+      infospot6.position.set( -2000, 0, 6000 );
+      infospot6.addHoverElement( document.getElementById( 'desc-container4' ), 200 );
+      panorama6.add( infospot6 );
+  
+      infospot7 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
+      infospot7.position.set( -1500, -400, 4500 );
+      infospot7.addHoverElement( document.getElementById( 'desc-container5' ), 200 );
+      panorama12.add( infospot7 );
+  
+      infospot8 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info );
+      infospot8.position.set( 1500, -400, -4500 );
+      infospot8.addHoverElement( document.getElementById( 'desc-container3' ), 200 );
+      panorama12.add( infospot8 );
+  
+      infospot9 = new PANOLENS.Infospot( 300, PANOLENS.DataImage.Info2 );
+      infospot9.position.set(4000, -2500.67, 100);
+      infospot9.addHoverElement( document.getElementById( 'beverages' ), 200 );
+      panorama5.add( infospot9 );
+  
+   </script>
+ </body>
+</html>
