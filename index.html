@@ -362,7 +362,7 @@ function changebook(){
   //audio testing
       document.getElementById("playAudio").addEventListener("click", function(){
 	    var audio = document.getElementById('testAudio');
-        if(this.innerHTML == "Pause"){
+        if(this.innerHTML !== "Pause"){
           this.innerHTML = "Play"
           audio.pause();
           } 
