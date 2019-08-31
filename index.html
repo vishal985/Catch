@@ -290,7 +290,7 @@ initCursor();
   // praveen div
       function mytry() {
   var x = document.getElementById("mydiv");
-  if (x.style.display == "block") {
+  if (x.style.display !== "block") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
