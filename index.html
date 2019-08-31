@@ -167,7 +167,7 @@
       <audio id="testAudio" controls="controls" autoplay="autoplay" loop="loop">
         <source src="https://cdn.glitch.com/50bc88ad-1f24-428a-bbd0-9834ae22d197%2Fsound.mp3" type="audio/mpeg">
       </audio>
-      <button id="playAudio">Pause</button>
+      <button id="playAudio">Play</button>
     </div>
 
 <div id="desc-container" style="display:none" class="normal-img">
@@ -362,12 +362,12 @@ function changebook(){
   //audio testing
       document.getElementById("playAudio").addEventListener("click", function(){
 	    var audio = document.getElementById('testAudio');
-        if(this.innerHTML == "Pause"){
-          this.innerHTML = "Play"
+        if(this.innerHTML == "Play"){
+          this.innerHTML = "Pause"
           audio.pause();
           } 
         else{
-          this.innerHTML = "Pause";
+          this.innerHTML = "Play";
           audio.play();
         }
       });
