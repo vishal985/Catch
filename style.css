@@ -56,7 +56,7 @@ html, body {
 }
 #book-img{
   width:100%;
-  height: -webkit-fill-available;
+  height:;
   object-fit: cover;
 }
 #book-next,
